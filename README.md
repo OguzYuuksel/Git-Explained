@@ -14,6 +14,13 @@
 > ~~I fixed navigation bug~~
 > fix navigation bug
 
+## Remarks
+- HEAD usually refers to a branch, not a specific commit, branch refers to a commit point. <br />
+  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/headRefersToBranch.png?raw=true" width="400"> <br />
+- Detached head can refer a commit. <br />
+  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/detachedHead.png?raw=true" width="400"> <br />
+- Remote Tracking Branch: It means GitHub branch. it is shown `<remotename>/<branch> | (origin/main)` <br />
+  
 ## Useful Commands
  - **`git init`** --- *creates repository in the current directory.*
  - **`git status`** --- *checks git status in the current repository.*
