@@ -1,13 +1,13 @@
 # Description
-*This is a summerize of [The Git & Github Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/) course*
+*This is a summarize of [The Git & Github Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/) course*
 
-# Initialization 
+# Initialization
  - When you are inside a new directory check `git status` if this directory has a repository.
  - If not use `git init` command to create a local repository.
 
 # Committing Rules
  - **Commit only for one feature, fix or update**
- - Describe your commit comments in imperative mood. 
+ - Describe your commit comments in imperative mood.
  - Commit titles should be less than 50 character and it must summarize changes.
  - If commit titles not enough to describe all changes, you may use next lines to explain your changes.
 
@@ -19,9 +19,9 @@
 
 # Remarks
 - *HEAD usually refers to a branch, not a specific commit, branch refers to a commit point.*
-  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/headRefersToBranch.png?raw=true" width="400"><br />
-- *Detached head can refer a commit.*<br />
-  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/detachedHead.png?raw=true" width="400"><br />
+  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/headRefersToBranch.png?raw=true" width="400"><br/>
+- *Detached head can refer a commit.*<br/>
+  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/detachedHead.png?raw=true" width="400"><br/>
 - **Remote Tracking Branch**: *It means GitHub branch. it is shown `<remotename>/<branch> | (origin/master)`.*
 - **Gists**: *It is a pastebin for GitHub, you can make it public or private.*
 - **Github Branch Protection**: *It protects your master branch, you can't commit or merge anything without pull request. Checkout `Repository Settings -> Branches`.*
@@ -37,20 +37,20 @@
   2. *Push up the feature branch to Github.*
   3. *Open a pull request using the feature branch just pushed up to Github.*
   4. *Wait for the PR to be approved and merged. If needed start discussion on the PR.*
- 
-- ### Semantic Versioning<br />
+
+- ### Semantic Versioning<br/>
   `2.4.1` *means majorRelase.minorRelease.patchRelease*
   **Major Release**: *Significant changes that is no longer backwards compatible.*
   **Minor Release**: *New functionality added but everything is backwards compatible, new feature is optional.*
   **Patch Release**: *Bug fixes, small changes.*
 
-- ### Tags<br />
+- ### Tags<br/>
   *Tags are generally used for Semantic versioning in master branch.*
-  1. **Lighweight tags**: *Just a name and label that points to a particular commit.*
+  1. **Lightweight tags**: *Just a name and label that points to a particular commit.*
   2. **Annotated tags**: *Includes author's name, email, creation date and tagging message.*
-  
+
 - ### Forking
-  - *Forking allows us to create personal copies of other peoples' repositories. If you are not cuntributor to the main project, you may fork it, work on your fork and then send a pull request to the owner from your fork.*<br/>
+  - *Forking allows us to create personal copies of other peoples' repositories. If you are not contributor to the main project, you may fork it, work on your fork and then send a pull request to the owner from your fork.*<br/>
     <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/forkingWorkFlow.png?raw=true" width="350"><br/>
   - *In local repository, you are going to use `origin` remote name for your Github repository, and `upstream` remote name for original project repository.*<br/>
     <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/forkingImage.png?raw=true" width="350"><br/>
@@ -60,9 +60,9 @@
     git remote add origin <urlofyouroriginalprojectrepository>
     ```
 - ### Extras
-  - *[Check out for .gitignore](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24619524#overview)* 
-  - *[Check out for Git Alias](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/25091380#overview)* 
-  - *[Check out for local config file which is repository specific](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24995958#overview)* 
+  - *[Check out for .gitignore](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24619524#overview)*
+  - *[Check out for Git Alias](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/25091380#overview)*
+  - *[Check out for local config file which is repository specific](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24995958#overview)*
   - *[Check out for blobs, trees, commits](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24996002#overview)*<br/>
     <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/blobsTreesCommits.png?raw=true" width="800"><br/>
 
@@ -92,11 +92,11 @@
 	 - **`-u <remotename>/<branchname>`** --- *sets upstream branch to the your local branch.* **(both must have the same name!)**
 
 &nbsp;&nbsp;
->### Dont switch branch without committing or stashing all changes in the current branch!
+>### Don't switch branch without committing or stashing all changes in the current branch!
 > When you make changes in branch A and without committing now you want to switch branch B, these changes will come with you to the branch B. If there is conflict, terminal will print an error, if not, your changes will go unstaged area of branch B.
 
  - **`git switch`** --- *allows you to switch your current HEAD branch.* **(do not use alone)**
-	 - **`<branchname>`** --- *switches from your current branch to the branchnames*
+	 - **`<branchname>`** --- *switches from your current branch to the branchname*
 	 - **`<remotebranchname>`** --- *creates a new local branch from the remote branch of the same name and it upstreams.*
 	 - **`-c <branchname>`** --- *creates a new local branch and switches to it.*
 
@@ -127,19 +127,19 @@
    - **`head~<number>`** ---
 
 &nbsp;
-> **Fast Forward Merge**: Simplest merge, applies automatically without any conflict.<br />
+> **Fast Forward Merge**: Simplest merge, applies automatically without any conflict.<br/>
 > **Merge Conflicts**: Terminal will open a text editor to fix conflicts after you fix them, merge will be applied.
  - **`git merge <branchname>`** --- *merges branchname to the current branch.*
 
 &nbsp;
 > ## Understanding Diffs in the terminal
 > diff --git a/filename1 b/filename2  ---> **a previous, b new version**
-> 
+>
 > @@ -3, 4 +3 5 @@ <br />
-> -3 -> **a version starts from line 3.** <br />
->  4 -> **prints 4 line on screen.** <br />
-> +3 -> **b version starts from line 3.** <br />
->  5 -> **prints 5 line on screen.** 
+> -3 -> **a version starts from line 3.** <br/>
+>  4 -> **prints 4 line on screen.** <br/>
+> +3 -> **b version starts from line 3.** <br/>
+>  5 -> **prints 5 line on screen.**
 
  - **`git diff`** --- *shows differences between current vs branch HEAD or staged area.*
 	 - **`<filename>`** --- *shows filename's differences between current vs branch HEAD or staged area.*
@@ -162,8 +162,8 @@
 
 &nbsp;
 > ## Initializing Remote Repository
-> *First be sure that you are in a local repository `git status` if not, create a local repository `git init`. Then write following*<br />
-> `git remote set-url origin git@github.com:OguzYuuksel/<project_name>.git`<br />
+> *First be sure that you are in a local repository `git status` if not, create a local repository `git init`. Then write following*<br/>
+> `git remote set-url origin git@github.com:OguzYuuksel/<project_name>.git`<br/>
 > *Now your local repository is connected to the cloud repository, you can check it out by writing `git remote`*
 
  - **`git remote`** --- *prints remotename of your current repository.*
@@ -180,15 +180,15 @@
      - **`<remotename> --tags`** --- *pushes all tags to the remotename.*
 
 &nbsp;
-> ## Fetch vs Pull<br />
-> ### Fetching<br />
-> - Downloads the latest information from remote branches, updates the remote tracking branches with the new changes, doesn't merge any changes onto your local repository.<br />
-> - Safe to do at anytime.<br />
-> - It lets you see what others have been working on, without merging those changes into your local repository.<br /><br />
+> ## Fetch vs Pull<br/>
+> ### Fetching<br/>
+> - Downloads the latest information from remote branches, updates the remote tracking branches with the new changes, doesn't merge any changes onto your local repository.<br/>
+> - Safe to do at anytime.<br/>
+> - It lets you see what others have been working on, without merging those changes into your local repository.<br/><br/>
 > ### Pulling<br />
-> - Downloads the latest information from remote branches, updates the current branch with the new changes by merging them in.<br />
-> - It may result in merging conflicts.<br />
-> - `git pull` = `git fetch` + `git merge`.<br />
+> - Downloads the latest information from remote branches, updates the current branch with the new changes by merging them in.<br/>
+> - It may result in merging conflicts.<br/>
+> - `git pull` = `git fetch` + `git merge`.<br/>
 > - **Not recommended if you have uncommitted changes!**
  - **`git fetch <remotename>`** --- *updates remote tracking branches of remotename.*
  	 - **`<branchname>`** --- *updates remote tracking branchname of remotename.*
@@ -197,8 +197,8 @@
 
  - **`git tag`** --- *prints a list of all the tags in the current repository.*
  	 - **`-l "*<word>*"`** --- *prints a list of all the tags that include "word" in their name.*
-  	 - **`<tagname>`** --- *creates a lightweight tag refferring to the commit that head is referencing.*
-  	 - **`-am <tagname> "<tagtitle>"`** --- *creates a annotated tag refferring to the commit that head is referencing.*
+  	 - **`<tagname>`** --- *creates a lightweight tag referring to the commit that head is referencing.*
+  	 - **`-am <tagname> "<tagtitle>"`** --- *creates a annotated tag referring to the commit that head is referencing.*
 	 - **`-am? <tagname> <commithash> "<tagtitle>"?`** --- *tags an older commit by providing the commit hash.*
 	 - **`-f <tagname> <commithash>`** --- *moves an existing tagname to the commithash.*
   	 - **`-d <tagname>`** --- *deletes a tag.*
@@ -231,10 +231,8 @@
 > *It clears and tidies up history of commits.*
 > - **Pick** --- *keeps commit as it is and nothing changes.*
 > - **Drop** --- *deletes commit message and its changes.*
-> - **Squash** --- *takes commit message and changes into previous commit, so that now you have two line of commit message in the same commit.* 
+> - **Squash** --- *takes commit message and changes into previous commit, so that now you have two line of commit message in the same commit.*
 > - **Fixup** --- *takes changes into previous commit and delete commit message.*
- - **`git rebase `** --- 
+ - **`git rebase `** ---
 	- **`<branchname>`** --- *ties the head of branchname to the current branch's tail.*
  	- **`-i head~<number>`** --- *allows us to edit commits, add files, drop commits from `head~<number>` till newest commit.*
-
-
