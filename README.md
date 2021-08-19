@@ -213,3 +213,28 @@
 > - *They expires after around 90 days, but this can be configured.*<br/>
  - **`git reflog show`** --- *lists the history of HEAD.*
  	 - **`<branchname>`** --- *lists the history of branch.*
+
+&nbsp;
+> ## Rebase<br/>
+> **DON'T REBASE IF YOU ALREADY PUSHED COMMITS UP TO GITHUB.**<br/>
+> ### [Usual Rebase](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24869796#overview)
+> - *You don't want to rewrite any git history that other people already have. It's a pain reconcile alternate histories!*<br/>
+> - *Wait until you are done with a new feature branch, then rebase the feature branch onto the master branch.*<br/>
+>   <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/gitRebase.png?raw=true" width="300"><br/>
+> - 1. `first git switch feature-branch`
+>   2. `git rebase master`
+>   3. `git switch master`
+>   4. `git merge feature-branch`<br/>
+>   
+>   *This rebase will change the history only in the feature branch, not in master! feature branch will end up with a linear project history.*<br/>
+> ### [Interactive Rebase](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24869816#overview)
+> *It clears and tidies up history of commits.*
+> - **Pick** --- *keeps commit as it is and nothing changes.*
+> - **Drop** --- *deletes commit message and its changes.*
+> - **Squash** --- *takes commit message and changes into previous commit, so that now you have two line of commit message in the same commit.* 
+> - **Fixup** --- *takes changes into previous commit and delete commit message.*
+ - **`git rebase `** --- 
+	- **`<branchname>`** --- *ties the head of branchname to the current branch's tail.*
+ 	- **`-i head~<number>`** --- *allows us to edit commits, add files, drop commits from `head~<number>` till newest commit.*
+
+
