@@ -59,8 +59,11 @@
     git remote add origin <urlofyourrepository>
     git remote add origin <urlofyouroriginalprojectrepository>
     ```
-  
-  
+- ### Extras
+  - *[Check out for .gitignore](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24619524#overview)* 
+  - *[Check out for Git Alias](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/25091380#overview)* 
+  - *[Check out for local config file which is repository specific](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24995958#overview)* 
+
 # Useful Commands
  - **`git init`** --- *creates repository in the current directory.*
  - **`git status`** --- *checks git status in the current repository.*
