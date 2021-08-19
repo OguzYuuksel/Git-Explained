@@ -75,7 +75,7 @@
    - **`head~<number>`** ---
 
 &nbsp;
-> **Fast Forward Merge**: Simplest merge, applies automatically without any conflict.
+> **Fast Forward Merge**: Simplest merge, applies automatically without any conflict.<br />
 > **Merge Conflicts**: Terminal will open a text editor to fix conflicts after you fix them, merge will be applied.
  - **`git merge <branchname>`** --- *merges branchname to the current branch.*
 
@@ -98,3 +98,24 @@
 	 - **`<commithash1> <commithash2> <filename>?`** --- *shows differences between commithash1 vs commithash2.*
 	 - **`<tag1> <tag2> <filename>?`** --- *shows differences between tag1 vs tag2.*
 	 - **`head@{<number1>} head@{<number2>} <filename>?`** --- *shows differences between number1 vs number2 in the Reflog HEAD (all history of HEAD).*
+
+ - **`git stash`** --- *saves uncommitted changes (saved or staged) in the branch.*
+ 	 - **`list`** --- *lists all stashes[`<branchname> <lastcommithash> <lastcommitcomment>`] in order(new first, old last).*
+  	 - **`clear`** --- *removes all stashes in the list.*
+  	 - **`drop stash@{<number>}?`** --- *removes stash from the list.*
+	 - **`pop stash@{<number>}?`** --- *applies last stash to the current branch and removes it from stash list.*
+	 - **`apply stash@{<number>}?`** --- *applies last stash to the current branch and keeps stash in the list.*
+
+ - **`git clone <url>`** --- *clones master branch of remote repository to your local directory and upstreams it.*
+
+&nbsp;
+> ## Initializing Remote Repository
+> *First be sure that you are in a local repository `git status` if not, create a local repository `git init`. Then write following*<br />
+> `git remote set-url origin git@github.com:OguzYuuksel/<project_name>.git`<br />
+> *Now your local repository is connected to the cloud repository, you can check it out by writing `git remote`*
+
+ - **`git remote`** --- *prints remotename of your current repository.*
+ 	 - **`-v`** --- *prints cloud url of your current repository.*
+  	 - **`add <remotename> <url>`** --- *connects cloud repository to your local repository.*
+  	 - **`rename <oldname> <newname>`** --- *renames your remotename.*
+	 - **`remove <remotename>`** --- *disconnects cloud repository from your local repository.*
