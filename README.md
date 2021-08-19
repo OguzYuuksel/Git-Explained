@@ -174,3 +174,13 @@
  	 - **`<branchname>`** --- *updates remote tracking branchname of remotename.*
 
  - **`git pull <remotename> <branchname>`** --- *updates remote tracking branches of remotename and merging it in your branchname branch of local repository.*
+
+ - **`git tag`** --- *prints a list of all the tags in the current repository.*
+ 	 - **`-l "*<word>*"`** --- *prints a list of all the tags that include "word" in their name.*
+  	 - **`<tagname>`** --- *creates a lightweight tag refferring to the commit that head is referencing.*
+  	 - **`-am <tagname> "<tagtitle>"`** --- *creates a annotated tag refferring to the commit that head is referencing.*
+	 - **`-am? <tagname> <commithash> "<tagtitle>"?`** --- *tags an older commit by providing the commit hash.*
+	 - **`-f <tagname> <commithash>`** --- *moves an existing tagname to the commithash.*
+  	 - **`-d <tagname>`** --- *deletes a tag.*
+
+ - **`git show <tagname>`** --- *prints metadata of an annotated tag.*
