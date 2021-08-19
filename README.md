@@ -63,6 +63,8 @@
   - *[Check out for .gitignore](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24619524#overview)* 
   - *[Check out for Git Alias](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/25091380#overview)* 
   - *[Check out for local config file which is repository specific](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24995958#overview)* 
+  - *[Check out for blobs, trees, commits](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/24996002#overview)*<br/>
+    <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/blobsTreesCommits.png?raw=true" width="800"><br/>
 
 # Useful Commands
  - **`git init`** --- *creates repository in the current directory.*
@@ -204,10 +206,10 @@
  - **`git show <tagname>`** --- *prints metadata of an annotated tag.*
 
 &nbsp;
-> ## [Refogs](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/25090992#overview)<br />
-> *They are useful if you want to see a commit that you don’t have in your `git log` anymore.*<br />
-> *It tracks heads moves. Reflog file is stored in .git/log in repository directory.*<br />
-> - *Git only logs your local activity, they are not shared with collaborators or pushed to remote repository.*<br />
-> - *They expires after around 90 days, but this can be configured.*<br />
+> ## [Refogs](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/25090992#overview)<br/>
+> *They are useful if you want to see a commit that you don’t have in your `git log` anymore.*<br/>
+> *It tracks heads moves. Reflog file is stored in .git/log in repository directory.*<br/>
+> - *Git only logs your local activity, they are not shared with collaborators or pushed to remote repository.*<br/>
+> - *They expires after around 90 days, but this can be configured.*<br/>
  - **`git reflog show`** --- *lists the history of HEAD.*
  	 - **`<branchname>`** --- *lists the history of branch.*
