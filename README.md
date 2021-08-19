@@ -21,6 +21,17 @@
   <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/detachedHead.png?raw=true" width="400"> <br />
 - Remote Tracking Branch: It means GitHub branch. it is shown `<remotename>/<branch> | (origin/main)` <br />
   
+- > ### Semantic Versioning <br />
+  > `2.4.1` *means majorRelase.minorRelease.patchRelease* <br />
+  > **Major Release**: *Significant changes that is no longer backwards compatible.* <br />
+  > **Minor Release**: *New functionality added but everything is backwards compatible, new feature is optional.* <br />
+  > **Patch Release**: *Bug fixes, small changes.* <br />
+
+- > ### Tags <br />
+  > Tags are generally used for Semantic versioning in main branch. <br />
+  > 1. **Lighweight tags**: Just a name and label that points to a particular commit. <br />
+  > 2. **Annotated tags**: Includes author's name, email, creation date and tagging message. <br />
+  
 ## Useful Commands
  - **`git init`** --- *creates repository in the current directory.*
  - **`git status`** --- *checks git status in the current repository.*
@@ -126,3 +137,10 @@
   	 - **`add <remotename> <url>`** --- *connects cloud repository to your local repository.*
   	 - **`rename <oldname> <newname>`** --- *renames your remotename.*
 	 - **`remove <remotename>`** --- *disconnects cloud repository from your local repository.*
+
+ - **`git push`** --- *pushes your streamed current branch to the cloud branch(Remote Tracking Branch).*
+ 	 - **`<remotename> <branchname>`** --- *pushes local branchname to the branchname of remotename.*
+  	 - **`-u <remotename> <branchname>`** --- *pushes local branchname to the branchname of remotename and sets upstream to it.*
+  	 - **`<remotename> <localbranchname>:<remotebranchname>`** --- *pushes localbranchname to the remotebranchname of remotename.*
+	 - **`<remotename> <tagname>`** --- *pushes tagname to th remotename.* **`git push` doesn't transfer your tags to the remote server!**
+     - **`<remotename> --tags`** --- *pushes all tags to the remotename.*
