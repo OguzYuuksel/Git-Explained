@@ -53,3 +53,12 @@
 	 - **`<commithash>`** --- *HEAD goes commithash.*
 	 - **`<tagname>`** --- *HEAD goes tagname.*
 	 - **`<remotename>/<branchname>`** --- *HEAD goes branch head of remote repository.*
+
+ - **`git restore`** --- *reverts unstaged changes.* **(do not use alone)**
+	 - **`<filename>`** --- *reverts unstaged changes in the filename to the HEAD in current branch .*
+	 - **`--source head~<number> <filename>`** --- *reverts unstaged changes in the filename to the specific commit but keeps changes in the staged area. **(do not use if not really needed)***
+	 - **`--staged <filename>`** --- *unstages filename.*
+
+ - **`git reset`** --- *unstages files that are in staged area.*
+	 - **`<commithash>`** --- *It will remove commits and messages back to commithash also unstage if there is any file in staged area but it will not touch anything saved in the directory so, your files will not be changed from their last saved version.*
+	 - **`--hard <commithash>`** --- *It will remove commits, staged and unstaged changes back to commithash.*
