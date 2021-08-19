@@ -202,3 +202,12 @@
   	 - **`-d <tagname>`** --- *deletes a tag.*
 
  - **`git show <tagname>`** --- *prints metadata of an annotated tag.*
+
+&nbsp;
+> ## [Refogs](https://www.udemy.com/course/git-and-github-bootcamp/learn/lecture/25090992#overview)<br />
+> *They are useful if you want to see a commit that you don’t have in your `git log` anymore.*<br />
+> *It tracks heads moves. Reflog file is stored in .git/log in repository directory.*<br />
+> - *Git only logs your local activity, they are not shared with collaborators or pushed to remote repository.*<br />
+> - *They expires after around 90 days, but this can be configured.*<br />
+ - **`git reflog show`** --- *lists the history of HEAD.*
+ 	 - **`<branchname>`** --- *lists the history of branch.*
