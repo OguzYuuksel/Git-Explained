@@ -8,10 +8,10 @@
  - Commit titles should be less than 50 character and it must summarize changes.
  - If commit titles not enough to describe all changes, you may use next lines to explain your changes.
 
-> ~~footer added~~ 
+> ~~footer added~~
 > add footer
 
-> ~~I fixed navigation bug~~ 
+> ~~I fixed navigation bug~~
 > fix navigation bug
 
 ## Useful Commands
@@ -71,4 +71,7 @@
    - **`<commithash>`** ---
    - **`head~<number>`** ---
 
+&nbsp;
+> **Fast Forward Merge**: Simplest merge, applies automatically without any conflict.
+> **Merge Conflicts**: Terminal will open a text editor to fix conflicts after you fix them, merge will be applied.
  - **`git merge <branchname>`** --- *merges branchname to the current branch.*
