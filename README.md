@@ -46,6 +46,16 @@
   > 1. **Lighweight tags**: Just a name and label that points to a particular commit.<br />
   > 2. **Annotated tags**: Includes author's name, email, creation date and tagging message.<br />
   
+- > ### Forking
+  > <center><img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/forkingImage.png?raw=true" width="350"></center><br />
+  > - *Forking allows us to create personal copies of other peoples' repositories. If you are not cuntributor to the main project, you may fork it, work on your fork and then send a pull request to the owner from your fork.*
+  > - In local repository, you are going to use `origin` remote name for your Github repository, and `upstream` remote name for original project repository.
+  > - Execute following in the terminal to achieve this.
+  > ```console 
+  > git remote add origin <urlofyourrepository>
+  > git remote add origin <urlofyouroriginalprojectrepository>
+  > ```
+  
 ## Useful Commands
  - **`git init`** --- *creates repository in the current directory.*
  - **`git status`** --- *checks git status in the current repository.*
