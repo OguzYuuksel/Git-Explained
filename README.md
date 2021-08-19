@@ -66,3 +66,9 @@
  - **`git reset`** --- *unstages files that are in staged area.*
 	 - **`<commithash>`** --- *It will remove commits and messages back to commithash also unstage if there is any file in staged area but it will not touch anything saved in the directory so, your files will not be changed from their last saved version.*
 	 - **`--hard <commithash>`** --- *It will remove commits, staged and unstaged changes back to commithash.*
+
+ - **`git revert`** --- *creates new commit by undoing a specific commit and both commits stays in the history.* **(do not use alone)**
+   - **`<commithash>`** ---
+   - **`head~<number>`** ---
+
+ - **`git merge <branchname>`** --- *merges branchname to the current branch.*
