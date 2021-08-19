@@ -63,6 +63,9 @@
 	 - **`--source head~<number> <filename>`** --- *reverts unstaged changes in the filename to the specific commit but keeps changes in the staged area. **(do not use if not really needed)***
 	 - **`--staged <filename>`** --- *unstages filename.*
 
+&nbsp;
+> ## Revert vs Reset
+> If you are working with a team and also one of your colleague is working in the same repository in his local, you should use **revert**, because deleting a history from a repository may cause complexity to keep code sync.
  - **`git reset`** --- *unstages files that are in staged area.*
 	 - **`<commithash>`** --- *It will remove commits and messages back to commithash also unstage if there is any file in staged area but it will not touch anything saved in the directory so, your files will not be changed from their last saved version.*
 	 - **`--hard <commithash>`** --- *It will remove commits, staged and unstaged changes back to commithash.*
