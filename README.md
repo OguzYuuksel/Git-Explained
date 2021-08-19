@@ -1,3 +1,6 @@
+# Description
+*This is a summerize of [The Git & Github Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/) course*
+
 # Initialization 
  - When you are inside a new directory check `git status` if this directory has a repository.
  - If not use `git init` command to create a local repository.
