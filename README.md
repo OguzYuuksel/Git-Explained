@@ -75,3 +75,23 @@
 > **Fast Forward Merge**: Simplest merge, applies automatically without any conflict.
 > **Merge Conflicts**: Terminal will open a text editor to fix conflicts after you fix them, merge will be applied.
  - **`git merge <branchname>`** --- *merges branchname to the current branch.*
+
+&nbsp;
+> ## Understanding Diffs in the terminal
+> diff --git a/filename1 b/filename2  ---> **a previous, b new version**
+> 
+> @@ -3, 4 +3 5 @@ <br />
+> -3 -> **a version starts from line 3.** <br />
+>  4 -> **prints 4 line on screen.** <br />
+> +3 -> **b version starts from line 3.** <br />
+>  5 -> **prints 5 line on screen.** 
+
+ - **`git diff`** --- *shows differences between current vs branch HEAD or staged area.*
+	 - **`<filename>`** --- *shows filename's differences between current vs branch HEAD or staged area.*
+	 - **`head <filename>?`** --- *shows differences between current vs branch HEAD.*
+	 - **`--staged <filename>?`** --- *shows differences between staged area vs branch HEAD.*
+	 - **`--cached <filename>?`** --- *shows differences between staged area vs branch HEAD.*
+	 - **`<branchname1> <branchname2> <filename>?`** --- *shows differences between branchname1's last commit vs branchname2's last commit.*
+	 - **`<commithash1> <commithash2> <filename>?`** --- *shows differences between commithash1 vs commithash2.*
+	 - **`<tag1> <tag2> <filename>?`** --- *shows differences between tag1 vs tag2.*
+	 - **`head@{<number1>} head@{<number2>} <filename>?`** --- *shows differences between number1 vs number2 in the Reflog HEAD (all history of HEAD).*
