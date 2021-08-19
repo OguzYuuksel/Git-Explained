@@ -1,8 +1,8 @@
-## Initialization 
+# Initialization 
  - When you are inside a new directory check `git status` if this directory has a repository.
  - If not use `git init` command to create a local repository.
 
-## Committing Rules
+# Committing Rules
  - **Commit only for one feature, fix or update**
  - Describe your commit comments in imperative mood. 
  - Commit titles should be less than 50 character and it must summarize changes.
@@ -14,49 +14,50 @@
 > ~~I fixed navigation bug~~
 > fix navigation bug
 
-## Remarks
-- *HEAD usually refers to a branch, not a specific commit, branch refers to a commit point.*<br />
+# Remarks
+- *HEAD usually refers to a branch, not a specific commit, branch refers to a commit point.*
   <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/headRefersToBranch.png?raw=true" width="400"><br />
 - *Detached head can refer a commit.*<br />
   <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/detachedHead.png?raw=true" width="400"><br />
-- **Remote Tracking Branch**: *It means GitHub branch. it is shown `<remotename>/<branch> | (origin/master)`.*<br />
-- **Gists**: *It is a pastebin for GitHub, you can make it public or private.*<br />
-- **Github Branch Protection**: *It protects your master branch, you can't commit or merge anything without pull request. Checkout `Repository Settings -> Branches`.*<br />
+- **Remote Tracking Branch**: *It means GitHub branch. it is shown `<remotename>/<branch> | (origin/master)`.*
+- **Gists**: *It is a pastebin for GitHub, you can make it public or private.*
+- **Github Branch Protection**: *It protects your master branch, you can't commit or merge anything without pull request. Checkout `Repository Settings -> Branches`.*
 
-- > ### Feature Branch Workflow<br />
-  > - *All development should be on separate branches*<br />
-  > - *Treat master branch as the official project history.*<br />
-  > - *Multiple teammates can collaborate on a single feature and share code back and forth without polluting the master branch.*<br />
-  > - *Master branch won't contain broken code.*<br />
+- ### Feature Branch Workflow
+  - *All development should be on separate branches*
+  - *Treat master branch as the official project history.*
+  - *Multiple teammates can collaborate on a single feature and share code back and forth without polluting the master branch.*
+  - *Master branch won't contain broken code.*
 
-- > ### Pull Requests<br />
-  > 1. *Do some work locally on a feature branch.*<br />
-  > 2. *Push up the feature branch to Github.*<br />
-  > 3. *Open a pull request using the feature branch just pushed up to Github.*<br />
-  > 4. *Wait for the PR to be approved and merged. If needed start discussion on the PR.*<br />
+- ### Pull Requests<br />
+  1. *Do some work locally on a feature branch.*
+  2. *Push up the feature branch to Github.*
+  3. *Open a pull request using the feature branch just pushed up to Github.*
+  4. *Wait for the PR to be approved and merged. If needed start discussion on the PR.*
  
-- > ### Semantic Versioning<br />
-  > `2.4.1` *means majorRelase.minorRelease.patchRelease*<br />
-  > **Major Release**: *Significant changes that is no longer backwards compatible.*<br />
-  > **Minor Release**: *New functionality added but everything is backwards compatible, new feature is optional.*<br />
-  > **Patch Release**: *Bug fixes, small changes.*<br />
+- ### Semantic Versioning<br />
+  `2.4.1` *means majorRelase.minorRelease.patchRelease*
+  **Major Release**: *Significant changes that is no longer backwards compatible.*
+  **Minor Release**: *New functionality added but everything is backwards compatible, new feature is optional.*
+  **Patch Release**: *Bug fixes, small changes.*
 
-- > ### Tags<br />
-  > Tags are generally used for Semantic versioning in master branch.<br />
-  > 1. **Lighweight tags**: Just a name and label that points to a particular commit.<br />
-  > 2. **Annotated tags**: Includes author's name, email, creation date and tagging message.<br />
+- ### Tags<br />
+  *Tags are generally used for Semantic versioning in master branch.*
+  1. **Lighweight tags**: *Just a name and label that points to a particular commit.*
+  2. **Annotated tags**: *Includes author's name, email, creation date and tagging message.*
   
-- > ### Forking
-  > <center><img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/forkingImage.png?raw=true" width="350"></center><br />
-  > - *Forking allows us to create personal copies of other peoples' repositories. If you are not cuntributor to the main project, you may fork it, work on your fork and then send a pull request to the owner from your fork.*
-  > - In local repository, you are going to use `origin` remote name for your Github repository, and `upstream` remote name for original project repository.
-  > - Execute following in the terminal to achieve this.
-  > ```console 
-  > git remote add origin <urlofyourrepository>
-  > git remote add origin <urlofyouroriginalprojectrepository>
-  > ```
+- ### Forking
+  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/forkingImage.png?raw=true" width="350"><br/>
+  - *Forking allows us to create personal copies of other peoples' repositories. If you are not cuntributor to the main project, you may fork it, work on your fork and then send a pull request to the owner from your fork.*
+  - *In local repository, you are going to use `origin` remote name for your Github repository, and `upstream` remote name for original project repository.*<br/>
+  - *Execute following in the terminal to achieve this.*
+  - ```console
+    git remote add origin <urlofyourrepository>
+    git remote add origin <urlofyouroriginalprojectrepository>
+    ```
   
-## Useful Commands
+  
+# Useful Commands
  - **`git init`** --- *creates repository in the current directory.*
  - **`git status`** --- *checks git status in the current repository.*
 
