@@ -144,3 +144,19 @@
   	 - **`<remotename> <localbranchname>:<remotebranchname>`** --- *pushes localbranchname to the remotebranchname of remotename.*
 	 - **`<remotename> <tagname>`** --- *pushes tagname to th remotename.* **`git push` doesn't transfer your tags to the remote server!**
      - **`<remotename> --tags`** --- *pushes all tags to the remotename.*
+
+&nbsp;
+> ## Fetch vs Pull<br />
+> ### Fetching<br />
+> - Downloads the latest information from remote branches, updates the remote tracking branches with the new changes, doesn't merge any changes onto your local repository.<br />
+> - Safe to do at anytime.<br />
+> - It lets you see what others have been working on, without merging those changes into your local repository.<br /><br />
+> ### Pulling<br />
+> - Downloads the latest information from remote branches, updates the current branch with the new changes by merging them in.<br />
+> - It may result in merging conflicts.<br />
+> - `git pull` = `git fetch` + `git merge`.<br />
+> - **Not recommended if you have uncommitted changes!**
+ - **`git fetch <remotename>`** --- *updates remote tracking branches of remotename.*
+ 	 - **`<branchname>`** --- *updates remote tracking branchname of remotename.*
+
+ - **`git pull <remotename> <branchname>`** --- *updates remote tracking branches of remotename and merging it in your branchname branch of local repository.*
