@@ -15,22 +15,36 @@
 > fix navigation bug
 
 ## Remarks
-- HEAD usually refers to a branch, not a specific commit, branch refers to a commit point. <br />
-  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/headRefersToBranch.png?raw=true" width="400"> <br />
-- Detached head can refer a commit. <br />
-  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/detachedHead.png?raw=true" width="400"> <br />
-- Remote Tracking Branch: It means GitHub branch. it is shown `<remotename>/<branch> | (origin/main)` <br />
-  
-- > ### Semantic Versioning <br />
-  > `2.4.1` *means majorRelase.minorRelease.patchRelease* <br />
-  > **Major Release**: *Significant changes that is no longer backwards compatible.* <br />
-  > **Minor Release**: *New functionality added but everything is backwards compatible, new feature is optional.* <br />
-  > **Patch Release**: *Bug fixes, small changes.* <br />
+- *HEAD usually refers to a branch, not a specific commit, branch refers to a commit point.*<br />
+  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/headRefersToBranch.png?raw=true" width="400"><br />
+- *Detached head can refer a commit.*<br />
+  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/detachedHead.png?raw=true" width="400"><br />
+- **Remote Tracking Branch**: *It means GitHub branch. it is shown `<remotename>/<branch> | (origin/master)`.*<br />
+- **Gists**: *It is a pastebin for GitHub, you can make it public or private.*<br />
+- **Github Branch Protection**: *It protects your master branch, you can't commit or merge anything without pull request. Checkout `Repository Settings -> Branches`.*<br />
 
-- > ### Tags <br />
-  > Tags are generally used for Semantic versioning in main branch. <br />
-  > 1. **Lighweight tags**: Just a name and label that points to a particular commit. <br />
-  > 2. **Annotated tags**: Includes author's name, email, creation date and tagging message. <br />
+- > ### Feature Branch Workflow<br />
+  > - *All development should be on separate branches*<br />
+  > - *Treat master branch as the official project history.*<br />
+  > - *Multiple teammates can collaborate on a single feature and share code back and forth without polluting the master branch.*<br />
+  > - *Master branch won't contain broken code.*<br />
+
+- > ### Pull Requests<br />
+  > 1. *Do some work locally on a feature branch.*<br />
+  > 2. *Push up the feature branch to Github.*<br />
+  > 3. *Open a pull request using the feature branch just pushed up to Github.*<br />
+  > 4. *Wait for the PR to be approved and merged. If needed start discussion on the PR.*<br />
+ 
+- > ### Semantic Versioning<br />
+  > `2.4.1` *means majorRelase.minorRelease.patchRelease*<br />
+  > **Major Release**: *Significant changes that is no longer backwards compatible.*<br />
+  > **Minor Release**: *New functionality added but everything is backwards compatible, new feature is optional.*<br />
+  > **Patch Release**: *Bug fixes, small changes.*<br />
+
+- > ### Tags<br />
+  > Tags are generally used for Semantic versioning in master branch.<br />
+  > 1. **Lighweight tags**: Just a name and label that points to a particular commit.<br />
+  > 2. **Annotated tags**: Includes author's name, email, creation date and tagging message.<br />
   
 ## Useful Commands
  - **`git init`** --- *creates repository in the current directory.*
