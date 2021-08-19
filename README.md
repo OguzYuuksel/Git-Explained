@@ -39,6 +39,10 @@
 	 - **`-r`** --- *lists remote branches that are fetched into our local repository.*
 	 - **`-u <remotename>/<branchname>`** --- *sets upstream branch to the your local branch.* **(both must have the same name!)**
 
+&nbsp;&nbsp;
+>### Dont switch branch without committing or stashing all changes in the current branch!
+> When you make changes in branch A and without committing now you want to switch branch B, these changes will come with you to the branch B. If there is conflict, terminal will print an error, if not, your changes will go unstaged area of branch B.
+
  - **`git switch`** --- *allows you to switch your current HEAD branch.* **(do not use alone)**
 	 - **`<branchname>`** --- *switches from your current branch to the branchnames*
 	 - **`<remotebranchname>`** --- *creates a new local branch from the remote branch of the same name and it upstreams.*
