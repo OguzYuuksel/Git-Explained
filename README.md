@@ -47,9 +47,10 @@
   2. **Annotated tags**: *Includes author's name, email, creation date and tagging message.*
   
 - ### Forking
-  <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/forkingImage.png?raw=true" width="350"><br/>
-  - *Forking allows us to create personal copies of other peoples' repositories. If you are not cuntributor to the main project, you may fork it, work on your fork and then send a pull request to the owner from your fork.*
+  - *Forking allows us to create personal copies of other peoples' repositories. If you are not cuntributor to the main project, you may fork it, work on your fork and then send a pull request to the owner from your fork.*<br/>
+    <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/forkingWorkFlow.png?raw=true" width="350"><br/>
   - *In local repository, you are going to use `origin` remote name for your Github repository, and `upstream` remote name for original project repository.*<br/>
+    <img src="https://github.com/OguzYuuksel/Git-Explained/blob/main/Assets/forkingImage.png?raw=true" width="350"><br/>
   - *Execute following in the terminal to achieve this.*
   - ```console
     git remote add origin <urlofyourrepository>
