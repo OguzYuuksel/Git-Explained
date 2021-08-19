@@ -18,12 +18,12 @@
  - **`git init`** --- *creates repository in the current directory.*
  - **`git status`** --- *checks git status in the current repository.*
 
- - **`git add`** --- *adds files to the staging area.*
+ - **`git add`** --- *adds files to the staging area.* **(do not use alone)**
 	 - **`.`** --- *adds all files to the staging area.*
 	 - **`<filename>`** --- *adds filename to the staging area.*
 	 - **`<filename1> <filename2>`** --- *adds filename1 and filename2 to the staging area.*
 
- - **`git commit`** --- *commits changes from staging area.*
+ - **`git commit`** --- *commits changes from staging area.* **(do not use alone)**
 	 - **`-m "commit title"`** --- *allows us to pass in an inline commit title, rather than launching a text editor.*
 	 - **`-am "commit title"`** --- *adds all changed files to the staging area and commits them. It doesn't work for the files which are never added to the staging area before.*
 	 - **`--amend`** --- *change the comment of previous commit or add current staging files to the previous commit.*
@@ -39,8 +39,17 @@
 	 - **`-r`** --- *lists remote branches that are fetched into our local repository.*
 	 - **`-u <remotename>/<branchname>`** --- *sets upstream branch to the your local branch.* **(both must have the same name!)**
 
- - **`git switch`** --- *allows you to switch your current HEAD branch.*
+ - **`git switch`** --- *allows you to switch your current HEAD branch.* **(do not use alone)**
 	 - **`<branchname>`** --- *switches from your current branch to the branchnames*
 	 - **`<remotebranchname>`** --- *creates a new local branch from the remote branch of the same name and it upstreams.*
 	 - **`-c <branchname>`** --- *creates a new local branch and switches to it.*
 
+ - **`git checkout`** --- *allows you to switch your current HEAD branch.* **(do not use alone)**
+	 - **`<branchname>`** --- *switches from your current branch to the branchname.*
+ 	 - **`-`** --- *HEAD goes newest commit in the history. **(it may be in another branch!)***
+	 - **`-- <filename>`** --- *reverts filename to the current HEAD **(not the newest commit!)***
+	 - **`head <filename>`** --- *reverts filename to the current HEAD **(not the newest commit!)***
+	 - **`head~<number>`** --- *HEAD goes number before commit.*
+	 - **`<commithash>`** --- *HEAD goes commithash.*
+	 - **`<tagname>`** --- *HEAD goes tagname.*
+	 - **`<remotename>/<branchname>`** --- *HEAD goes branch head of remote repository.*
