@@ -163,7 +163,7 @@
 &nbsp;
 > ## Initializing Remote Repository
 > *First be sure that you are in a local repository `git status` if not, create a local repository `git init`. Then write following*<br/>
-> `git remote set-url origin git@github.com:OguzYuuksel/<project_name>.git`<br/>
+> `git remote add origin git@github.com:OguzYuuksel/<project_name>.git`<br/>
 > *Now your local repository is connected to the cloud repository, you can check it out by writing `git remote`*
 
  - **`git remote`** --- *prints remotename of your current repository.*
